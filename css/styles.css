@@ -150,13 +150,14 @@ input {
 p.pFiltre {
 	position:relative;
 	z-index:1;
-	bottom: 14px;
-	padding: 14px;
+	bottom: 16px;
+	padding: 16px;
+	padding-left : 30px;
 	border-radius: 0  30px 30px 0;
 	border: 2px solid #d9d9d9;
 	border-left: none;
 	font-weight: bold;
 	height:20px;
 	vertical-align: middle;
-	margin-left:-50;
+	margin-left:-1.5rem;
 }
