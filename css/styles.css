@@ -1,3 +1,25 @@
+/* ------- Propriétés communes à toute la page ------- */
+
+a:link {
+	color: Black;
+	text-decoration: none;
+}
+
+a:visited {
+	color: Black;
+	text-decoration: none;
+}
+
+.checked { /* Etoiles notation */
+	color:#0065FC; /* Bleu du modèle, récupéré à la pipette de Photoshop */
+  }
+
+.notChecked {
+	color: #d9d9d9; /* Etoiles notation */
+}
+
+/* ------- Description des éléments constitutifs, de haut en bas ------- */
+
 body {
 	font-family: 'Raleway', sans-serif;
 	display: flex;
@@ -5,13 +27,37 @@ body {
 }
 
 .container {
-	width: 100%;
-	max-width: 1200px;
+	max-width: 1340px;
+	justify-content: center;
 }
 
 header {
 	display: flex;
 	justify-content: space-between;
+}
+
+.logo {
+	width: 96px;
+}
+
+.titreLogo {
+	font-size: 23px;
+}
+
+/* ------- Menu haut droit ------- */
+nav a:link {
+	color: inherit;
+	text-decoration: none;
+}
+
+nav a:active {
+	color: #0065FC;
+	text-decoration: none;
+}
+
+nav a:visited {
+	color: inherit;
+	text-decoration: none;
 }
 
 nav {
@@ -27,137 +73,262 @@ nav li {
 	list-style: none;
 	padding-left: 30px;
 }
+/* ------- Fin du menu ------- */
 
-footer {
-	display: flex;
-	justify-content: space-between;
-}
-
-.checked {
-	color:#0065FC;
-  }
-
-.notChecked {
-	color: grey;
-}
-
-a:link.lienCarte {
-	color:inherit;
-	text-decoration: none;
-}
-
-a:visited.lienCarte {
-	color:inherit;
-	text-decoration: none;
-}
-
-input {
-	box-sizing: border-box;
-	font-size: 13px;
-	vertical-align: top;
-}
-
-
+/* ------- Bloc Recherche ------- */
 .barreRecherche {
 	font-size: 0;
 }
 
 .imgRecherche {
-	padding: 10px;
-	color: grey;
-	font-size:15px;
 	background: #F2F2F2;
 	border-radius: 15px 0 0 15px;
-	height: 20px;
+	color: black;
+	font-size: 18px;
+	height: 19px;
+	padding: 10px;
+	text-align: center;
+	width: 30px;
 }
 
-.recherche {
-	padding: 10px;
-	max-width: 400px;
-	height: 40px;
-	border-top: 1px solid #F2F2F2;
+.inputRecherche {
 	border-bottom: 1px solid #F2F2F2;
 	border-left: none;
 	border-right: none;
-	outline: none;
+	border-top: 1px solid #F2F2F2;
+	box-sizing: border-box;
+	font-size: 18px;
 	font-weight: bold;
+	height: 40px;
+	max-width: 234px;
+	padding: 10px;
+	outline: none;
+	vertical-align: top;
 }
 
 .envoyer {
-	cursor: pointer;
-	border: none;
 	background: #0065FC;
-	color: #F2F2F2;
-	border-radius: 0 15px 15px 0;
+	border: none;
 	border-left: none;
+	border-radius: 0 15px 15px 0;
+	color: #F2F2F2;
+	cursor: pointer;
+	height: 40px;
 	padding: 10px;
 	width: 100px;
-	height: 40px;
 }
+/* ------- Fin Bloc Recherche ------- */
 
-.logo {
-	width:96px;
-}
-
-.imgCarte {
-	width:236px;
-	max-height:114px;
-	object-fit: cover;
-	border-radius: 15px 15px 0 0px;
-}
-
-.imgCartePopulaire {
-	width:126px;
-	height:133px;
-	object-fit: cover;
-	border-radius: 15px 0 0 15px;
-}
-
-.imgCarteActivité {
-	width:236px;
-	max-height:114px;
-	object-fit: cover;
-	border-radius: 15px 15px 0px 0px;
-}
-
+/* ------- Bloc Filtres ------- */
 .barreFiltres {
-	padding:10px;
 	display : inline-flex;
-	justify-content: space-between;
 	font-weight: bold;
+	justify-content: space-between;
+	padding: 10px;
 }
 
+p.titreFiltres {
+	font-size: 18px;
+}
 .filtre {
 	display : inline-flex;
 	margin-left:10px;
 }
 
 .imgFiltre {
-	margin-left: 10px;
-	z-index:2;
 	background: #DEEBFF;
+	border-radius: 100px;
 	color: #0065FC;
 	display: inline-block;
-  	border-radius: 100px;
-	padding: 18px;
 	font-size: 20px;
-	width:20px;
+	height: 20px;
 	line-height: 40px;
+	margin-left: 10px;
+	padding: 18px;
 	text-align: center;
-	height:20px;
+	width: 20px;
+	z-index: 2;
 }
 
 p.pFiltre {
-	position:relative;
-	z-index:1;
-	bottom: 16px;
-	padding: 16px;
-	padding-left : 30px;
-	border-radius: 0  30px 30px 0;
 	border: 2px solid #d9d9d9;
 	border-left: none;
+	border-radius: 0  30px 30px 0;
+	bottom: 18px;
+	font-size: 18px;
 	font-weight: bold;
 	height:20px;
-	vertical-align: middle;
 	margin-left:-1.5rem;
+	padding: 16px;
+	padding-left : 30px;
+	position:relative;
+	z-index:1;
+}
+/* ------- Fin Bloc Filtres ------- */
+
+/* ------- Bloc Infos ------- */
+.barreInfos {
+	display : flex;
+	justify-content: space-between;
+	margin-top: -2rem;
+	max-width: 450px;
+}
+
+.circle {
+    border: 2px solid #F2F2F2;
+    border-radius: 50%;
+    height: 5px;
+	padding: 10px;
+	margin-top: 10px;
+	width: 5px;
+}
+
+.fa-info {
+	color: #0065FC;
+	font-size: 0.8rem;
+	padding-right : 10px;
+	margin-top: -0.8rem;
+	vertical-align: middle;
+}
+/* ------- Fin Bloc Infos ------- */
+
+.blocHaut {
+	display: flex;
+	justify-content: space-between;
+}
+
+/* ------- Bloc Hébergement ------- */
+.imgCarteHébergement {
+	border-radius: 15px 15px 0 0px;
+	max-height:114px;
+	object-fit: cover;
+	width:236px;
+}
+
+.blocHébergement {
+	background: #F2F2F2;
+	border-radius: 15px 15px 15px 15px;
+	flex-basis: 65%;
+	flex-grow: 0;
+    flex-shrink: 0;
+	padding : 20px;
+}
+
+.titreHébergement {
+	font-size: 1.5rem;
+	font-weight: bold;
+	padding-left: 20px;
+}
+
+.carteHébergement {
+	Background : white;
+	border-radius: 15px 15px 15px 15px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.0), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	line-height: 0.5em;
+	margin : 20px;
+	padding : 4px;
+}
+
+.afficherPlus {
+	font-size: 18px;
+	padding : 20px;
+}
+
+.hébergement {
+	background:#F2F2F2;
+	flex-wrap :wrap;
+	display: flex;
+	justify-content: space-between;
+}
+/* ------- Fin Bloc Hébergement ------- */
+
+/* ------- Bloc Populaires ------- */
+.imgCartePopulaire {
+	border-radius: 15px 0 0 15px;
+	height:133px;
+	object-fit: cover;
+	width:126px;
+}
+
+.plusPopulaires {
+	background:#F2F2F2;
+	border-radius: 15px 15px 15px 15px;
+	flex-basis: 27%;
+	flex-grow: 0;
+    flex-shrink: 0;
+	padding : 20px;
+}
+
+.titrePopulaires {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.cartePopulaire {
+	background: white;
+	border-radius: 15px 15px 15px 15px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.0), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	display: flex;
+	flex-direction: row;
+	margin : 20px;
+	padding: 4px;
+}
+
+.textePopulaire {
+	padding : 4px;
+}
+/* ------- Fin Bloc Populaires ------- */
+
+/* ------- Bloc Activités ------- */
+.imgCarteActivité {
+	border-radius: 15px 15px 0px 0px;
+	max-height:114px;
+	object-fit: cover;
+	width:236px;
+}
+
+.activités {
+	display: flex;
+	justify-content: space-between;
+}
+
+.grandeCarteActivité {
+	background: white;
+	border-radius: 15px 15px 15px 15px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.0), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	display: flex;
+	flex-direction: row;
+	margin : 20px;
+}
+
+.petiteCarteActivité {
+	background: white;
+	border-radius: 15px 15px 15px 15px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.0), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	display: flex;
+	flex-direction: row;
+	margin : 20px;
+}
+
+.activités h1 {
+	font-size: 18px;
+	padding-left: 15px;
+}
+/* ------- Fin Bloc Activités ------- */
+
+footer {  /* pied de page */
+	background:#F2F2F2;
+	display: flex;
+	justify-content: space-between;
+	max-width: 1440px;
+}
+
+footer ul {
+	display: flex;
+	flex-direction: column;
+}
+
+footer li {
+	list-style: none;
+	padding-left: 30px;
 }
