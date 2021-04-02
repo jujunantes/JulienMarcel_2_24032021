@@ -35,10 +35,12 @@ html, body {
 	display: flex;
 	flex-direction: column;
 	font-family: 'Raleway', sans-serif;
+	scroll-behavior: smooth;
 }
 
 header {
 	display: flex;
+	width:1440px;
 }
 
 header ul {
@@ -48,6 +50,14 @@ header ul {
 header li {
 	list-style: none;
 	padding-left: 30px;
+}
+
+header nav a:hover {
+	color:#0065FC;
+}
+
+header nav li:hover {
+	border-top: 2px solid #0065FC;
 }
 
 .logo {
@@ -95,17 +105,67 @@ main {
 	color: #F2F2F2;
 	font-size: 0.9rem;
 	padding: 1rem;
-	/*
-	height: 3rem;
-	padding: 10px;
-	width: 100px;
-	*/
+}
+
+.barreFiltres {
+	display : flex;
+	font-size: 1rem;;
+	font-weight: bold;
+	margin-top: 1rem;
 }
 
 .filtre {
 	display: flex;
-	flex: 1;
-	position: relative;
+	margin-left: 1rem;
+}
+
+.filtre:hover .pFiltre {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.0), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	bottom:0.9rem;
+}
+
+.filtre:hover .imgFiltre {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.0), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	height:1.5rem;
+	width: 1.5rem;
+}
+
+.imgFiltre {
+	background: #DEEBFF;
+	border-radius: 10rem;
+	color: #0065FC;
+	height: 1.4rem;
+	padding: 1rem;
+	width: 1.4rem;
+	z-index: 2;
+}
+
+.pFiltre {
+	border: 2px solid #d9d9d9;
+	border-left: none;
+	border-radius: 0  30px 30px 0;
+	bottom: 1rem;
+	font-size: 1rem;
+	font-weight: bold;
+	margin-left:-1.5rem;
+	padding: 1rem;
+	padding-left : 2rem;
+	position:relative;
+	z-index:1;
+}
+
+.barreInfos {
+	display: flex;
+}
+
+.cercle {
+    border: 2px solid #F2F2F2;
+    border-radius: 1rem;
+    height: .8rem;
+	padding: 0.3rem;
+	margin-right: 0.5rem;
+	margin-top: 0.7rem;
+	width: 1rem;
 }
 
 #blocHaut {
@@ -115,8 +175,8 @@ main {
 #blocHébergement {
 	background-color: #F2F2F2;
 	border-radius: 15px 15px 15px 15px;
-	max-width: 60%;
-	padding : 2rem;
+	max-width: 57%;
+	padding: 2rem;
 	margin-right: 2rem;
 }
 
@@ -125,7 +185,7 @@ main {
 #hébergement {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	justify-content: space-around;
 }
 
 /* --- images --- */
@@ -157,17 +217,18 @@ main {
 	border-radius: 15px 15px 15px 15px;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.0), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	display: flex;
-	margin : 20px;
+	margin : 2rem;
 }
 
 .carteHébergement {
 	margin : 0;
-	padding: 4px;
+	margin-bottom: 1.5rem;
+	padding: 0.2rem;
 }
 
 .cartePopulaire {
 	flex-direction: row;
-	padding: 4px;
+	padding: 0.2rem;
 }
 
 .grandeCarteActivité {
@@ -187,7 +248,6 @@ aside {
 
 #titrePopulaires {
 	display:flex;
-	flex-direction: row;
 }
 
 #activités {
