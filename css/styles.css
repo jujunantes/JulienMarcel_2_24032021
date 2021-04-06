@@ -1,4 +1,4 @@
-/* ------- Propriétés communes à toute la page ------- */
+/* ------- Proprietes communes à toute la page ------- */
 
 a:link {
 	color: Black;
@@ -6,12 +6,12 @@ a:link {
 }
 
 a:visited {
-	color: Black;
+	color: black;
 	text-decoration: none;
 }
 
 .checked { /* Etoiles notation */
-	color:#0065FC; /* Bleu du modèle, récupéré à la pipette de Photoshop */
+	color:#0065FC; /* Bleu du modèle, recupere à la pipette de Photoshop */
   }
 
 .notChecked {
@@ -27,20 +27,29 @@ a:visited {
 	height: 1rem;
 	width: 1rem;
 }
-/* ------- Description des éléments constitutifs, de haut en bas ------- */
+/* ------- Description des elements constitutifs, de haut en bas ------- */
 
-html, body {
+body {
 	align-items: center;
 	background-color: white;
 	display: flex;
 	flex-direction: column;
 	font-family: 'Raleway', sans-serif;
+	padding-top: 2rem;
 	scroll-behavior: smooth;
+}
+
+main {
+	max-width: 1440px;
 }
 
 header {
 	display: flex;
 	width:1440px;
+}
+
+header h1{
+	font-size: 1.3rem;
 }
 
 header ul {
@@ -49,24 +58,28 @@ header ul {
 
 header li {
 	list-style: none;
-	padding-left: 30px;
 }
 
-header nav a:hover {
+header nav {
+	line-height: 3rem;
+}
+
+header nav a{
+	padding: 1.5rem;
+	padding-top: 3.3rem;
+	border-top: blue;
+}
+
+header nav a:visited{
 	color:#0065FC;
 }
 
-header nav li:hover {
+header nav a:hover {
 	border-top: 2px solid #0065FC;
 }
 
 .logo {
 	width : 6rem;
-}
-
-main {
-	margin: auto;
-	max-width: 1440px;
 }
 
 /* --- Recherche --- */
@@ -78,15 +91,15 @@ main {
 
 .imgRecherche {
 	background: #F2F2F2;
-	border-radius: 15px 0 0 15px;
+	border-radius: 1rem 0 0 1rem;
 	padding: 1rem;
 }
 
 .inputRecherche {
-	border-bottom: 1px solid #F2F2F2;
+	border-bottom: .1rem solid #F2F2F2;
 	border-left: none;
 	border-right: none;
-	border-top: 1px solid #F2F2F2;
+	border-top: .1rem solid #F2F2F2;
 	box-sizing: border-box;
 	font-size: 1rem;
 	font-weight: bold;
@@ -101,7 +114,7 @@ main {
 	background: #0065FC;
 	border: none;
 	border-left: none;
-	border-radius: 0 15px 15px 0;
+	border-radius: 0 1rem 1rem 0;
 	color: #F2F2F2;
 	font-size: 0.9rem;
 	padding: 1rem;
@@ -120,12 +133,12 @@ main {
 }
 
 .filtre:hover .pFiltre {
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.0), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	box-shadow: 0 .4rem .8rem 0 rgba(0, 0, 0, 0.0), 0 .6rem 2rem 0 rgba(0, 0, 0, 0.19);
 	bottom:0.9rem;
 }
 
 .filtre:hover .imgFiltre {
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.0), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	box-shadow: 0 .4rem .8rem 0 rgba(0, 0, 0, 0.0), 0 .6rem 2rem 0 rgba(0, 0, 0, 0.19);
 	height:1.5rem;
 	width: 1.5rem;
 }
@@ -143,7 +156,7 @@ main {
 .pFiltre {
 	border: 2px solid #d9d9d9;
 	border-left: none;
-	border-radius: 0  30px 30px 0;
+	border-radius: 0  3rem 3rem 0;
 	bottom: 1rem;
 	font-size: 1rem;
 	font-weight: bold;
@@ -159,7 +172,7 @@ main {
 }
 
 .cercle {
-    border: 2px solid #F2F2F2;
+    border: .1rem solid #F2F2F2;
     border-radius: 1rem;
     height: .8rem;
 	padding: 0.3rem;
@@ -172,95 +185,181 @@ main {
 	display: flex;
 }
 
-#blocHébergement {
+#blocHebergement {
 	background-color: #F2F2F2;
-	border-radius: 15px 15px 15px 15px;
-	max-width: 57%;
+	border-radius: 1rem 1rem 1rem 1rem;
+	max-width: 60%;
 	padding: 2rem;
+	padding-top: 0.5rem;
 	margin-right: 2rem;
 }
 
-/* #titreHébergement {} */
+#titreHebergement {
+	font-size: 1rem;
+	padding-left: 1rem;;
+}
 
-#hébergement {
+#hebergement {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
 }
 
 /* --- images --- */
-.imgGénéral {
-	border-radius: 15px 15px 0 0px;
+.imgGeneral {
+	border-radius: 1rem 1rem 0 0;
 	object-fit: cover;
 }
 
-.imgCarteHébergement {
-	max-height:114px;
-	width:236px;
+.imgCarteHebergement {
+	max-height:7.3rem;
+	width:14.6rem;
 }
 
 .imgCartePopulaire {
-	border-radius: 15px 0 0 15px;
-	height:133px;
-	width:126px;
+	border-radius: 1rem 0 0 1rem;
+	height:8.5rem;
+	width:8.1rem
 }
 
-.imgCarteActivité {
-	max-height:114px;
-	width:236px;
+.imgGrandeCarteActivite {
+	height:25rem;
+	max-width:19rem;
+	object-fit: cover;
+}
+
+.imgPetiteCarteActivite {
+	height:12.5rem;
+	width:19rem;
+	object-fit: cover;
 }
 /* --- Fin images --- */
 
 /* --- cartes --- */
 .carte {
 	background-color: white;
-	border-radius: 15px 15px 15px 15px;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.0), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border-radius: 1rem 1rem 1rem 1rem;
+	box-shadow: 0 .4rem .8rem 0 rgba(0, 0, 0, 0.0), 0 .6rem 2rem 0 rgba(0, 0, 0, 0.19);
 	display: flex;
 	margin : 2rem;
 }
 
-.carteHébergement {
+.carteHebergement {
 	margin : 0;
 	margin-bottom: 1.5rem;
-	padding: 0.2rem;
+	padding: 0.3rem;
 }
 
 .cartePopulaire {
+	margin-bottom: 1.5rem;
+	margin-top: 0;
 	flex-direction: row;
-	padding: 0.2rem;
+	padding: 0.3rem;
 }
 
-.grandeCarteActivité {
-	flex-direction: row;
+.grandeCarteActivite {
+	margin : 0;
+	margin-bottom: 1.5rem;
+	width:19rem;
+	flex-direction: column;
 }
 
-.petiteCarteActivité {
-	flex-direction: row;
+.petiteCarteActivite {
+	margin : 0;
+	margin-bottom: 1.5rem;
+	width:19rem;
+	flex-direction: column;
 }
 /* --- Fin cartes --- */
 
+/* --- textes cartes --- */
+.texteCarteHebergement {
+	display:block;
+	padding: 1rem;
+	line-height: 0;
+	margin-top: -1rem;
+}
+
+.texteCarteHebergement h2{
+	font-size: 1rem;
+	padding-bottom: .5rem;
+}
+
+.textePopulaire {
+	font-size: 0.8rem;
+	display:block;
+	padding: 1rem;
+	line-height: 1rem;
+	margin-top: -1.5rem;
+}
+
+/* --- Fin textes cartes --- */
+
 aside {
 	background-color: #F2F2F2;
-	border-radius: 15px 15px 15px 15px;
-	max-width: 25%;
+	border-radius: 1rem 1rem 1rem 1rem;
+	max-width: 30%;
 }
 
 #titrePopulaires {
 	display:flex;
+	justify-content: space-between;
+	padding: 2rem;
+	padding-bottom: 0;
+	padding-top: 0.5rem;
 }
 
-#activités {
+.iconePopulaire {
+	position: relative;
+	top: 1.5rem;
+	height: 1.5rem;
+	width: 1.5rem;
+}
+
+#blocBas {
 	display: flex;
+	flex-direction: column;
+}
+
+#activites {
+	display: flex;
+	justify-content: space-between;
+}
+
+#activites h2{
+	font-size: 1rem;
+	padding-left: 1rem;
+}
+
+#activites h1 {
+	display:block;
+	padding-left: 1rem;
+	line-height: 0;
 }
 
 footer {
-	display: flex;
+	display:flex;
 	justify-content: space-around;
 	background-color: #F2F2F2;
-	width: 100%;
+	justify-content: center;
+	margin-top: 3rem;
+	width:100%;
+	bottom:0;
 }
+
 footer li {
 	align-items: baseline;
 	list-style: none;
+	margin-bottom: 1rem;
+}
+
+footer ul{
+	margin-right: 18rem;
+}
+
+#monPiedDePage {
+	display:flex;
+	justify-content: space-around;
+	margin-top: 2rem;
+	width:100%;
 }
