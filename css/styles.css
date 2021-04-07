@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
 /* ------- Proprietes communes à toute la page ------- */
 
 a:link {
@@ -16,11 +17,6 @@ a:visited {
 
 .notChecked {
 	color: #d9d9d9; /* Etoiles notation */
-}
-
-@font-face {
-	font-family: "Raleway";
-	src: url("fonts/Raleway/Raleway-VariableFont_wght.ttf") format("truetype");
 }
 
 .icone {
