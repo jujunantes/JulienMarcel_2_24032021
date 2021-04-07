@@ -16,9 +16,9 @@
       <p>En plein centre ville ou en pleine nature</p>
     </div>
     <nav>
-      <a href="#blocHaut" class="scrollLink">Hébergements</a>
-      <a href="#blocBas" class="scrollLink">Activités</a>
-      <a href="#"><b>S'inscrire</b></a>
+      <a id="lBlocHaut" href="#blocHaut">Hébergements</a>
+      <a id="lBlocBas" href="#blocBas">Activités</a>
+      <a id="lInscription" href="#inscription"><b>S'inscrire</b></a>
     </nav>
   </header>
   
@@ -27,7 +27,7 @@
     <div id="blocRecherche">
       <form class="barreRecherche">
         <img src="images/icones/map-marker-alt-solid.svg" alt="Recherche" class="icone imgRecherche">
-        <input class="inputRecherche" type="text" value="Marseille, France" onclick="effaceInput(this);" />
+        <input class="inputRecherche" type="text" placeholder="Marseille, France" onclick="effaceInput(this);" />
         <input class="envoyer" type="button" value="Rechercher" />
       </form>
       <div class="barreFiltres">
@@ -221,42 +221,42 @@
   <div id="blocBas">
     <h2>Activités à Marseille</h2>
     <section id="activites">
-      <div class="carte grandeCarteActivite">
+      <div class="carte carteActivite">
         <a href="#">
           <img class="imgGeneral imgGrandeCarteActivite" src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="">
           <h2>Vieux Port</h2>
         </a>
       </div>
       <div class="activitesPetitesCartes">
-        <div class="carte petiteCarteActivite">
+        <div class="carte carteActivite">
           <a href="#">
-            <img class="imgGeneral imgPetiteCarteActivite" src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="">
+            <img class="imgGeneral imgPetiteCarteActivite imgPomegues" src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="">
             <h2>Fort de Pomègues</h2>
           </a>
         </div>
-        <div class="carte petiteCarteActivite">
+        <div class="carte carteActivite">
           <a href="#">
-            <img class="imgGeneral imgPetiteCarteActivite" src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="">
+            <img class="imgGeneral imgPetiteCarteActivite imgFrioul" src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="">
             <h2>Îles du Frioul</h2>
           </a>
         </div>
       </div>
-        <div class="carte grandeCarteActivite">
+        <div class="carte carteActivite">
           <a href="#">
             <img class="imgGeneral imgGrandeCarteActivite" src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="">
             <h2>Parc National des Calanques</h2>
           </a>
         </div>
       <div class="activitesPetitesCartes">
-        <div class="carte petiteCarteActivite">
+        <div class="carte carteActivite">
           <a href="#">
-            <img class="imgGeneral imgPetiteCarteActivite" src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="">
+            <img class="imgGeneral imgPetiteCarteActivite imgGarde" src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="">
             <h2>Notre-Dame-de-la-Garde</h2>
           </a>
         </div>
-        <div class="carte petiteCarteActivite">
+        <div class="carte carteActivite">
           <a href="#">
-            <img class="imgGeneral imgPetiteCarteActivite" src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="">
+            <img class="imgGeneral imgPetiteCarteActivite imgLongchamp" src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="">
             <h2>Parc Longchamp</h2>
           </a>
         </div>
