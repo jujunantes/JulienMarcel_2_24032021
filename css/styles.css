@@ -37,13 +37,13 @@ html {
 	margin:    0 auto;
     max-width: 1440px;
 	scroll-behavior: smooth;
+	font-family: 'Raleway', sans-serif;
 }
 
 body {
 	background-color: white;
 	display: flex;
 	flex-direction: column;
-	font-family: 'Raleway', sans-serif;
 	padding-top: 1rem;
 }
 
