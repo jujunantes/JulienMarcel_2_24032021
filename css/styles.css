@@ -311,6 +311,10 @@ header a:visited {
     padding: 0.3rem;
 }
 
+#cartesPopulaires {
+	margin:0;
+	padding:0;
+}
 .cartePopulaire {
     margin: 2rem;
     margin-top: 0;
@@ -379,10 +383,6 @@ aside h2 {
     padding-left: 2rem;
 }
 
-#titrePopulaires h2 {
-    font-size: 1.3rem;
-}
-
 .iconePopulaire {
     position: relative;
     top: .5rem;
@@ -445,9 +445,80 @@ footer ul {
 }
 
 /* ------- Responsive ------- */
-@media only screen and (max-width: 1200px) {}
+/*
+	Breakpoints suggérés par le site : https://css-tricks.com/snippets/css/media-queries-for-standard-devices/
+*/
+@media only screen and (max-width: 1280px) { /* Adaptation tablettes */
 
-@media only screen and (max-width: 600px) {
+	#barreFiltres li {
+        padding-bottom: 1rem;
+    }
+
+	#blocHebergement,
+    #plusPopulaires,
+    #blocBas {
+        flex-direction: column;
+        align-content: center;
+        max-width: 100%;
+    }
+
+	#cartesPopulaires {
+		display:flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.cartePopulaire {
+    	margin: 1rem;
+    	margin-top: 0;
+		width:20rem;
+    	flex-direction: row;
+    	padding: 0.3rem;
+    	padding-bottom: 0.2rem;
+	}
+
+	#plusPopulaires {
+        border-radius: 0;
+        width: 100%;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: 0;
+        padding: 0;
+        padding-bottom: .3rem;
+    }
+
+	#blocHebergement {
+        background-color: white;
+	}
+
+    #blocHaut {
+        display: flex;
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+        line-height: 1rem;
+        padding-left: 0;
+        padding-right: 0;
+	}
+
+	#activites {
+		display:flex;
+		flex-wrap: wrap;
+		justify-content:center;
+	}
+
+	.carteActivite {
+		margin:.5rem;
+	}
+
+	footer ul {
+        margin: 0;
+        padding-left: 2rem;
+        padding-bottom: 1rem;
+    }
+}
+
+@media only screen and (max-width: 667px) {
 
     header {
         margin: 0;
