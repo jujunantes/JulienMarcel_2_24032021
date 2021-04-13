@@ -1,180 +1,198 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
+
+<head>
   <title>Reservia</title>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="css/styles.css">
-  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Reservia, le site qui vous aide à trouver votre logement de vacances" />
+  <link rel="stylesheet" type="text/css" href="css/styles.css" />
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
 </head>
+
 <body>
   <header>
-    <div>
-      <div>
-        <img class="logo" src="images/logo/Reservia@3x.png" alt="Logo de Reservia">
-        <h1 class="titreLogo">Trouvez votre hébergement pour des vacances de rêve</h1>
+    <div id="logoEtMenu">
+      <img id="logo" src="images/logo/Reservia@3x.png" alt="Logo de Reservia" />
+      <div id="menu">
+        <nav>
+          <ul>
+            <li><a href="#hebergements">Hébergements</a></li>
+            <li><a href="#activites">Activités</a></li>
+        </ul>
+        </nav>
+        <div id="inscription">
+          <a href="#inscription"><b>S'inscrire</b></a>
+        </div>
       </div>
+    </div>
+    <div id="titre">
+      <h1>
+        Trouvez votre hébergement pour des vacances de rêve
+      </h1>
       <p>En plein centre ville ou en pleine nature</p>
     </div>
-    <nav>
-      <a id="lBlocHaut" href="#blocHaut">Hébergements</a>
-      <a id="lBlocBas" href="#blocBas">Activités</a>
-      <a id="lInscription" href="#inscription"><b>S'inscrire</b></a>
-    </nav>
   </header>
-  
+
   <main>
-    
     <div id="blocRecherche">
-      <form class="barreRecherche">
-        <img src="images/icones/map-marker-alt-solid.svg" alt="Recherche" class="icone imgRecherche">
-        <input class="inputRecherche" type="text" placeholder="Marseille, France" onclick="effaceInput(this);" />
-        <input class="envoyer" type="button" value="Rechercher" />
+      <form id="barreRecherche">
+        <img src="images/icones/map-marker-alt-solid.svg" alt="Recherche" class="icone imgRecherche" />
+        <input id="inputRecherche" type="text" placeholder="Marseille, France" ; />
+        <input id="envoyer1" type="button" value="Rechercher" />
+        <button id="envoyer2"><img src="images/icones/search-solid.svg" alt="rechercher" class="icone" /></button>
       </form>
-      <div class="barreFiltres">
-        <p class="titreFiltres">Filtres</p>
-        <div class="filtre">
-            <img src="images/icones/money-bill-wave-solid.svg" alt="economique" class="icone imgFiltre">
-          <p class="pFiltre">Économique</p>
-        </div>
-        <div class="filtre">
-            <img src="images/icones/child-solid.svg" alt="familial" class="icone imgFiltre">
-          <p class="pFiltre">Familial</p>
-        </div>
-        <div class="filtre">
-            <img src="images/icones/heart-solid.svg" alt="romantique" class="icone imgFiltre">
-          <p class="pFiltre">Romantique</p>
-        </div>
-        <div class="filtre">
-            <img src="images/icones/dog-solid.svg" alt="animaux" class="icone imgFiltre">
-          <p class="pFiltre">Animaux Autorisés</p>
-        </div>
+      <div id="barreFiltres">
+        <p>Filtres</p>
+        <ul>
+          <a href="#">
+            <li><img src="images/icones/money-bill-wave-solid.svg" alt="economique" class="icone imgFiltre" />
+              <div class="pFiltre">Economique</div>
+            </li>
+          </a>
+          <a href="#">
+            <li><img src="images/icones/child-solid.svg" alt="familial" class="icone imgFiltre" />
+              <div class="pFiltre">Familial</div>
+            </li>
+          </a>
+          <a href="#">
+            <li><img src="images/icones/heart-solid.svg" alt="romantique" class="icone imgFiltre" />
+              <div class="pFiltre">Romantique</div>
+            </li>
+          </a>
+          <a href="#">
+            <li><img src="images/icones/dog-solid.svg" alt="animaux" class="icone imgFiltre" />
+              <div class="pFiltre">Animaux autorisés</div>
+            </li>
+          </a>
+        </ul>
       </div>
-      <div class="barreInfos">
-        <div class="circle">
-            <img src="images/icones/info-solid.svg" alt="Recherche" class="icone cercle">
-        </div>
-        <p class="pInfos">Plus de 500 logements sont disponibles dans cette ville</p>
-      </div>
+      <p><img src="images/icones/info-solid.svg" alt="Recherche" class="icone cercle" />Plus de 500 logements sont disponibles dans cette ville</p>
     </div>
-    
+
     <div id="blocHaut">
-      
       <!-- Section des cartes -->
-      
+
       <section id="blocHebergement">
         <div id="titreHebergement">
           <h2>Hébergements à Marseille</h2>
         </div>
-        
+
         <section id="hebergement">
           <div class="carte carteHebergement">
             <a href="#">
-              <img class="imgGeneral imgCarteHebergement" src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="">
+              <img class="imgGeneral imgCarteHebergement"
+                src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="" />
               <div class="texteCarteHebergement">
                 <h2>Auberge la Cannebière</h2>
                 <p>Nuit à partir de <b>25€</b></p>
-                <img src="images/icones/star-solid-checked.svg" class="etoile" alt="etoile checked">
-                <img src="images/icones/star-solid-checked.svg" class="etoile" alt="etoile checked">
-                <img src="images/icones/star-solid-checked.svg" class="etoile" alt="etoile checked">
-                <img src="images/icones/star-solid-checked.svg" class="etoile" alt="etoile checked">
-                <img src="images/icones/star-solid-unchecked.svg" class="etoile" alt="etoile unchecked">
+                <img src="images/icones/star-solid-checked.svg" class="etoile" alt="etoile checked" />
+                <img src="images/icones/star-solid-checked.svg" class="etoile" alt="etoile checked" />
+                <img src="images/icones/star-solid-checked.svg" class="etoile" alt="etoile checked" />
+                <img src="images/icones/star-solid-checked.svg" class="etoile" alt="etoile checked" />
+                <img src="images/icones/star-solid-unchecked.svg" class="etoile" alt="etoile unchecked" />
               </div>
             </a>
           </div>
           <div class="carte carteHebergement">
             <a href="#">
-              <img class="imgGeneral imgCarteHebergement" src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="">
+              <img class="imgGeneral imgCarteHebergement"
+                src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="" />
               <div class="texteCarteHebergement">
                 <h2>Hôtel du port</h2>
                 <p>Nuit à partir de <b>52€</b></p>
-                <img src="images/icones/star-solid-checked.svg" class="etoile" alt="etoile checked">
-                <img src="images/icones/star-solid-checked.svg" class="etoile" alt="etoile checked">
-                <img src="images/icones/star-solid-checked.svg" class="etoile" alt="etoile checked">
-                <img src="images/icones/star-solid-checked.svg" class="etoile" alt="etoile checked">
-                <img src="images/icones/star-solid-checked.svg" class="etoile" alt="etoile checked">
+                <img src="images/icones/star-solid-checked.svg" class="etoile" alt="etoile checked" />
+                <img src="images/icones/star-solid-checked.svg" class="etoile" alt="etoile checked" />
+                <img src="images/icones/star-solid-checked.svg" class="etoile" alt="etoile checked" />
+                <img src="images/icones/star-solid-checked.svg" class="etoile" alt="etoile checked" />
+                <img src="images/icones/star-solid-checked.svg" class="etoile" alt="etoile checked" />
               </div>
             </a>
           </div>
           <div class="carte carteHebergement">
             <a href="#">
-              <img class="imgGeneral imgCarteHebergement" src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="">
+              <img class="imgGeneral imgCarteHebergement"
+                src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="" />
               <div class="texteCarteHebergement">
                 <h2>Hôtel Les Mouettes</h2>
                 <p>Nuit à partir de <b>76€</b></p>
-                <img src="images/icones/star-solid-checked.svg" class="etoile" alt="etoile checked">
-                <img src="images/icones/star-solid-checked.svg" class="etoile" alt="etoile checked">
-                <img src="images/icones/star-solid-checked.svg" class="etoile" alt="etoile checked">
-                <img src="images/icones/star-solid-checked.svg" class="etoile" alt="etoile checked">
-                <img src="images/icones/star-solid-unchecked.svg" class="etoile" alt="etoile unchecked">
+                <img src="images/icones/star-solid-checked.svg" class="etoile" alt="etoile checked" />
+                <img src="images/icones/star-solid-checked.svg" class="etoile" alt="etoile checked" />
+                <img src="images/icones/star-solid-checked.svg" class="etoile" alt="etoile checked" />
+                <img src="images/icones/star-solid-checked.svg" class="etoile" alt="etoile checked" />
+                <img src="images/icones/star-solid-unchecked.svg" class="etoile" alt="etoile unchecked" />
               </div>
             </a>
           </div>
           <div class="carte carteHebergement">
             <a href="#">
-              <img class="imgGeneral imgCarteHebergement" src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="">
+              <img class="imgGeneral imgCarteHebergement"
+                src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="" />
               <div class="texteCarteHebergement">
                 <h2>Hôtel de la mer</h2>
                 <p>Nuit à partir de <b>46€</b></p>
-                <img src="images/icones/star-solid-checked.svg" class="etoile" alt="etoile checked">
-                <img src="images/icones/star-solid-checked.svg" class="etoile" alt="etoile checked">
-                <img src="images/icones/star-solid-checked.svg" class="etoile" alt="etoile checked">
-                <img src="images/icones/star-solid-unchecked.svg" class="etoile" alt="etoile unchecked">
-                <img src="images/icones/star-solid-unchecked.svg" class="etoile" alt="etoile unchecked">
+                <img src="images/icones/star-solid-checked.svg" class="etoile" alt="etoile checked" />
+                <img src="images/icones/star-solid-checked.svg" class="etoile" alt="etoile checked" />
+                <img src="images/icones/star-solid-checked.svg" class="etoile" alt="etoile checked" />
+                <img src="images/icones/star-solid-unchecked.svg" class="etoile" alt="etoile unchecked" />
+                <img src="images/icones/star-solid-unchecked.svg" class="etoile" alt="etoile unchecked" />
               </div>
             </a>
           </div>
           <div class="carte carteHebergement">
             <a href="#">
-              <img class="imgGeneral imgCarteHebergement" src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="">
+              <img class="imgGeneral imgCarteHebergement"
+                src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="" />
               <div class="texteCarteHebergement">
                 <h2>Auberge Le Panier</h2>
                 <p>Nuit à partir de <b>23€</b></p>
-                <img src="images/icones/star-solid-checked.svg" class="etoile" alt="etoile checked">
-                <img src="images/icones/star-solid-checked.svg" class="etoile" alt="etoile checked">
-                <img src="images/icones/star-solid-checked.svg" class="etoile" alt="etoile checked">
-                <img src="images/icones/star-solid-checked.svg" class="etoile" alt="etoile checked">
-                <img src="images/icones/star-solid-unchecked.svg" class="etoile" alt="etoile unchecked">
+                <img src="images/icones/star-solid-checked.svg" class="etoile" alt="etoile checked" />
+                <img src="images/icones/star-solid-checked.svg" class="etoile" alt="etoile checked" />
+                <img src="images/icones/star-solid-checked.svg" class="etoile" alt="etoile checked" />
+                <img src="images/icones/star-solid-checked.svg" class="etoile" alt="etoile checked" />
+                <img src="images/icones/star-solid-unchecked.svg" class="etoile" alt="etoile unchecked" />
               </div>
             </a>
           </div>
           <div class="carte carteHebergement">
             <a href="#">
-              <img class="imgGeneral imgCarteHebergement" src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="">
+              <img class="imgGeneral imgCarteHebergement"
+                src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="" />
               <div class="texteCarteHebergement">
                 <h2>Hôtel chez Amina</h2>
                 <p>Nuit à partir de <b>96€</b></p>
-                <img src="images/icones/star-solid-checked.svg" class="etoile" alt="etoile checked">
-                <img src="images/icones/star-solid-checked.svg" class="etoile" alt="etoile checked">
-                <img src="images/icones/star-solid-checked.svg" class="etoile" alt="etoile checked">
-                <img src="images/icones/star-solid-checked.svg" class="etoile" alt="etoile checked">
-                <img src="images/icones/star-solid-checked.svg" class="etoile" alt="etoile checked">
+                <img src="images/icones/star-solid-checked.svg" class="etoile" alt="etoile checked" />
+                <img src="images/icones/star-solid-checked.svg" class="etoile" alt="etoile checked" />
+                <img src="images/icones/star-solid-checked.svg" class="etoile" alt="etoile checked" />
+                <img src="images/icones/star-solid-checked.svg" class="etoile" alt="etoile checked" />
+                <img src="images/icones/star-solid-checked.svg" class="etoile" alt="etoile checked" />
               </div>
             </a>
           </div>
         </section>
         <b><a id="afficherPlus" href="#">Afficher plus</a></b>
       </section>
-      
+
       <aside id="plusPopulaires">
         <div id="titrePopulaires">
-            <h2>Les plus populaires</h2>
-            <img src="images/icones/chart-line-solid.svg" alt="Recherche" class="icone iconePopulaire">
+          <h2>Les plus populaires</h2>
+          <img src="images/icones/chart-line-solid.svg" alt="Recherche" class="icone iconePopulaire" />
         </div>
         <a href="#">
           <div class="carte cartePopulaire">
             <div>
-              <img class="imgGeneral imgCartePopulaire" src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="">
+              <img class="imgGeneral imgCartePopulaire"
+                src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="" />
             </div>
             <div class="textePopulaire">
               <h2>Hôtel Le soleil du matin</h2>
               <p>Nuit à partir de <b>128€</b></p>
               <div class="barreEtoiles">
-                <img src="images/icones/star-solid-checked.svg" class="etoile" alt="etoile checked">
-                <img src="images/icones/star-solid-checked.svg" class="etoile" alt="etoile checked">
-                <img src="images/icones/star-solid-checked.svg" class="etoile" alt="etoile checked">
-                <img src="images/icones/star-solid-checked.svg" class="etoile" alt="etoile checked">
-                <img src="images/icones/star-solid-checked.svg" class="etoile" alt="etoile checked">
+                <img src="images/icones/star-solid-checked.svg" class="etoile" alt="etoile checked" />
+                <img src="images/icones/star-solid-checked.svg" class="etoile" alt="etoile checked" />
+                <img src="images/icones/star-solid-checked.svg" class="etoile" alt="etoile checked" />
+                <img src="images/icones/star-solid-checked.svg" class="etoile" alt="etoile checked" />
+                <img src="images/icones/star-solid-checked.svg" class="etoile" alt="etoile checked" />
               </div>
             </div>
           </div>
@@ -182,17 +200,18 @@
         <a href="#">
           <div class="carte cartePopulaire">
             <div>
-              <img class="imgGeneral imgCartePopulaire" src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="">
+              <img class="imgGeneral imgCartePopulaire"
+                src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="" />
             </div>
             <div class="textePopulaire">
               <h2>Au coeur de l'eau Chambres d'hôtes</h2>
               <p>Nuit à partir de <b>71€</b></p>
               <div class="barreEtoiles">
-                <img src="images/icones/star-solid-checked.svg" class="etoile" alt="etoile checked">
-                <img src="images/icones/star-solid-checked.svg" class="etoile" alt="etoile checked">
-                <img src="images/icones/star-solid-checked.svg" class="etoile" alt="etoile checked">
-                <img src="images/icones/star-solid-checked.svg" class="etoile" alt="etoile checked">
-                <img src="images/icones/star-solid-unchecked.svg" class="etoile" alt="etoile unchecked">
+                <img src="images/icones/star-solid-checked.svg" class="etoile" alt="etoile checked" />
+                <img src="images/icones/star-solid-checked.svg" class="etoile" alt="etoile checked" />
+                <img src="images/icones/star-solid-checked.svg" class="etoile" alt="etoile checked" />
+                <img src="images/icones/star-solid-checked.svg" class="etoile" alt="etoile checked" />
+                <img src="images/icones/star-solid-unchecked.svg" class="etoile" alt="etoile unchecked" />
               </div>
             </div>
           </div>
@@ -200,99 +219,110 @@
         <a href="#">
           <div class="carte cartePopulaire">
             <div>
-              <img class="imgGeneral imgCartePopulaire" src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="">
+              <img class="imgGeneral imgCartePopulaire"
+                src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="" />
             </div>
             <div class="textePopulaire">
               <h2>Hôtel Tout bleu et Blanc</h2>
               <p>Nuit à partir de <b>68€</b></p>
               <div class="barreEtoiles">
-                <img src="images/icones/star-solid-checked.svg" class="etoile" alt="etoile checked">
-                <img src="images/icones/star-solid-checked.svg" class="etoile" alt="etoile checked">
-                <img src="images/icones/star-solid-checked.svg" class="etoile" alt="etoile checked">
-                <img src="images/icones/star-solid-checked.svg" class="etoile" alt="etoile checked">
-                <img src="images/icones/star-solid-unchecked.svg" class="etoile" alt="etoile unchecked">
+                <img src="images/icones/star-solid-checked.svg" class="etoile" alt="etoile checked" />
+                <img src="images/icones/star-solid-checked.svg" class="etoile" alt="etoile checked" />
+                <img src="images/icones/star-solid-checked.svg" class="etoile" alt="etoile checked" />
+                <img src="images/icones/star-solid-checked.svg" class="etoile" alt="etoile checked" />
+                <img src="images/icones/star-solid-unchecked.svg" class="etoile" alt="etoile unchecked" />
               </div>
             </div>
           </div>
         </a>
-    </aside>
-    
-  </div>
-  
-  <div id="blocBas">
-    <h2>Activités à Marseille</h2>
-    <section id="activites">
-      <div class="carte carteActivite">
-        <a href="#">
-          <img class="imgGeneral imgGrandeCarteActivite" src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="">
-          <h2>Vieux Port</h2>
-        </a>
-      </div>
-      <div class="activitesPetitesCartes">
+      </aside>
+    </div>
+
+    <div id="blocBas">
+      <h2>Activités à Marseille</h2>
+      <section id="activites">
         <div class="carte carteActivite">
           <a href="#">
-            <img class="imgGeneral imgPetiteCarteActivite imgPomegues" src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="">
-            <h2>Fort de Pomègues</h2>
+            <img class="imgGeneral imgGrandeCarteActivite"
+              src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="" />
+            <h2>Vieux Port</h2>
           </a>
+        </div>
+        <div class="activitesPetitesCartes">
+          <div class="carte carteActivite">
+            <a href="#">
+              <img class="imgGeneral imgPetiteCarteActivite imgPomegues"
+                src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="" />
+              <h2>Fort de Pomègues</h2>
+            </a>
+          </div>
+          <div class="carte carteActivite">
+            <a href="#">
+              <img class="imgGeneral imgPetiteCarteActivite imgFrioul"
+                src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="" />
+              <h2>Îles du Frioul</h2>
+            </a>
+          </div>
         </div>
         <div class="carte carteActivite">
           <a href="#">
-            <img class="imgGeneral imgPetiteCarteActivite imgFrioul" src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="">
-            <h2>Îles du Frioul</h2>
-          </a>
-        </div>
-      </div>
-        <div class="carte carteActivite">
-          <a href="#">
-            <img class="imgGeneral imgGrandeCarteActivite" src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="">
+            <img class="imgGeneral imgGrandeCarteActivite"
+              src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="" />
             <h2>Parc National des Calanques</h2>
           </a>
         </div>
-      <div class="activitesPetitesCartes">
-        <div class="carte carteActivite">
-          <a href="#">
-            <img class="imgGeneral imgPetiteCarteActivite imgGarde" src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="">
-            <h2>Notre-Dame-de-la-Garde</h2>
-          </a>
+        <div class="activitesPetitesCartes">
+          <div class="carte carteActivite">
+            <a href="#">
+              <img class="imgGeneral imgPetiteCarteActivite imgGarde"
+                src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="" />
+              <h2>Notre-Dame-de-la-Garde</h2>
+            </a>
+          </div>
+          <div class="carte carteActivite">
+            <a href="#">
+              <img class="imgGeneral imgPetiteCarteActivite imgLongchamp"
+                src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="" />
+              <h2>Parc Longchamp</h2>
+            </a>
+          </div>
         </div>
-        <div class="carte carteActivite">
-          <a href="#">
-            <img class="imgGeneral imgPetiteCarteActivite imgLongchamp" src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="">
-            <h2>Parc Longchamp</h2>
-          </a>
-        </div>
-      </div>
-    </section>
-  </div>
-  
-</main>
+      </section>
+    </div>
+  </main>
 
-<footer>
-  <div id="monPiedDePage">
-    <div class="piedDePage">
-    <ul>
-      <li><h2>A Propos</h2></li>
-      <li><a href="">Fonctionnement du site</a></li>
-      <li><a href="">Conditions générales de vente</a></li>
-      <li><a href="">Données et confidentialité</a></li>
-    </ul>
-  </div>
-  <div class="piedDePage">
-    <ul>
-      <li><h2>Nos Hébergements</h2></li>
-      <li><a href="">Charte qualité</a></li>
-      <li><a href="">Soumettre votre hôtel</a></li>
-    </ul>
-  </div>
-  <div class="piedDePage">
-    <ul>
-      <li><h2>Assistance</h2></li>
-      <li><a href="">Centre d'aide</a></li>
-      <li><a href="">Nous contacter</a></li>
-    </ul>
-  </div>
-  </div>
-  
-</footer>
+  <footer>
+    <div id="monPiedDePage">
+      <div class="piedDePage">
+        <ul>
+          <li>
+            <h2>A Propos</h2>
+          </li>
+          <li><a href="">Fonctionnement du site</a></li>
+          <li><a href="">Conditions générales de vente</a></li>
+          <li><a href="">Données et confidentialité</a></li>
+        </ul>
+      </div>
+      <div class="piedDePage">
+        <ul>
+          <li>
+            <h2>Nos Hébergements</h2>
+          </li>
+          <li><a href="">Charte qualité</a></li>
+          <li><a href="">Soumettre votre hôtel</a></li>
+        </ul>
+      </div>
+      <div class="piedDePage">
+        <ul>
+          <li>
+            <h2>Assistance</h2>
+          </li>
+          <li><a href="">Centre d'aide</a></li>
+          <li><a href="">Nous contacter</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
 </body>
+
 </html>
