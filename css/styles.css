@@ -88,9 +88,7 @@ header li {
 }
 
 #inscription {
-    position: absolute;
-    top: 2.5rem;
-    right: 1rem;
+	padding-top: 1rem;
 }
 
 #menu a {
@@ -513,9 +511,10 @@ footer ul {
     }
 
     #inscription {
-        position: absolute;
+		position: absolute;
         top: 2.5rem;
         right: 1rem;
+		padding-top: 0;
     }
 
     #titre {
