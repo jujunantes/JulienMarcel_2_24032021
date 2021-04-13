@@ -88,7 +88,7 @@ header li {
 }
 
 #inscription {
-	padding-top: 1rem;
+    padding-top: 1rem;
 }
 
 #menu a {
@@ -120,6 +120,10 @@ header a:visited {
     display: flex;
     flex: 1;
     position: relative;
+}
+
+#barreFiltres a {
+    display: flex;
 }
 
 .imgRecherche {
@@ -312,9 +316,10 @@ header a:visited {
 }
 
 #cartesPopulaires {
-	margin:0;
-	padding:0;
+    margin: 0;
+    padding: 0;
 }
+
 .cartePopulaire {
     margin: 2rem;
     margin-top: 0;
@@ -448,13 +453,14 @@ footer ul {
 /*
 	Breakpoints suggérés par le site : https://css-tricks.com/snippets/css/media-queries-for-standard-devices/
 */
-@media only screen and (max-width: 1280px) { /* Adaptation tablettes */
+@media only screen and (max-width: 1280px) {
+    /* Adaptation tablettes */
 
-	#barreFiltres li {
+    #barreFiltres li {
         padding-bottom: 1rem;
     }
 
-	#blocHebergement,
+    #blocHebergement,
     #plusPopulaires,
     #blocBas {
         flex-direction: column;
@@ -462,22 +468,22 @@ footer ul {
         max-width: 100%;
     }
 
-	#cartesPopulaires {
-		display:flex;
-		flex-wrap: wrap;
-		justify-content: center;
-	}
+    #cartesPopulaires {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 
-	.cartePopulaire {
-    	margin: 1rem;
-    	margin-top: 0;
-		width:20rem;
-    	flex-direction: row;
-    	padding: 0.3rem;
-    	padding-bottom: 0.2rem;
-	}
+    .cartePopulaire {
+        margin: 1rem;
+        margin-top: 0;
+        width: 20rem;
+        flex-direction: row;
+        padding: 0.3rem;
+        padding-bottom: 0.2rem;
+    }
 
-	#plusPopulaires {
+    #plusPopulaires {
         border-radius: 0;
         width: 100%;
         flex-direction: column;
@@ -488,9 +494,9 @@ footer ul {
         padding-bottom: .3rem;
     }
 
-	#blocHebergement {
+    #blocHebergement {
         background-color: white;
-	}
+    }
 
     #blocHaut {
         display: flex;
@@ -499,19 +505,19 @@ footer ul {
         line-height: 1rem;
         padding-left: 0;
         padding-right: 0;
-	}
+    }
 
-	#activites {
-		display:flex;
-		flex-wrap: wrap;
-		justify-content:center;
-	}
+    #activites {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 
-	.carteActivite {
-		margin:.5rem;
-	}
+    .carteActivite {
+        margin: .5rem;
+    }
 
-	footer ul {
+    footer ul {
         margin: 0;
         padding-left: 2rem;
         padding-bottom: 1rem;
@@ -582,10 +588,10 @@ footer ul {
     }
 
     #inscription {
-		position: absolute;
+        position: absolute;
         top: 2.5rem;
         right: 1rem;
-		padding-top: 0;
+        padding-top: 0;
     }
 
     #titre {
