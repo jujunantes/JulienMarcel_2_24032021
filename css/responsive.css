@@ -1,0 +1,281 @@
+@media all and (min-width: 1325px) {
+    #container {
+        max-width: 1325px;
+        margin: auto;
+    }
+
+    #conteneurMenu {
+        max-width: 1325px;
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width: 1280px) {
+    /* Adaptation tablettes */
+
+    #barreFiltres li,
+    #barreFiltres p {
+        padding-bottom: 1rem;
+    }
+
+}
+
+@media only screen and (max-width: 667px) {
+    #logoEtMenu {
+        flex-direction: column;
+        padding-top: 1rem;
+    }
+
+    #logo {
+        margin-left: 1rem;
+    }
+
+    #menu nav {
+        width: 100%;
+        margin: 0;
+    }
+
+    #menu nav ul {
+        width: 100%;
+        margin: 0;
+        padding:0;
+		padding-top: 1rem;
+    }
+
+    #menu nav li {
+        margin: 0;
+        flex: 1;
+        padding: 0;
+        padding-bottom: 1rem;
+        text-align: center;
+        border-bottom: .2rem solid var(--gris);
+    }
+
+    #menu {
+        padding: 0;
+    }
+
+    #menu a {
+        padding: 0;
+        padding-bottom: 1rem;
+    }
+
+    #menu nav a:hover,
+    #menu nav a:active {
+        display: block;
+        margin-top: 0rem;
+        padding-top: 0rem;
+        margin-bottom: -1.2rem;
+        border-bottom: .2rem solid var(--bleuFonce);
+    }
+
+    #menu a:active,
+    #menu a:hover {
+        border-top: none;
+    }
+
+    #inscription {
+        position: absolute;
+        top: 2rem;
+        right: 1rem;
+        padding-top: 0;
+    }
+
+    #titre {
+        padding: 1rem;
+        padding-top: .5rem;
+    }
+
+    #titre h1 {
+        font-size: 1.4rem;
+        line-height: 1.7rem;
+    }
+
+    #blocRecherche {
+        display: flex;
+        justify-content: space-between;
+        line-height: 1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    #inputRecherche {
+        border-bottom: .1rem solid var(--gris);
+        border-left: none;
+        border-right: none;
+        border-top: .1rem solid var(--gris);
+        box-sizing: border-box;
+        font-size: 1rem;
+        font-weight: bold;
+        height: 3rem;
+        max-width: unset;
+        padding: 1rem;
+        outline: none;
+        vertical-align: top;
+        margin: 0;
+    }
+
+    #barreRecherche {
+        margin-left: auto;
+        margin-right: auto;
+        box-sizing: content-box;
+    }
+
+    #envoyer1 {
+        display: none;
+    }
+
+    #envoyer2 {
+        display: var(--bleuClair);
+        background: var(--bleuFonce);
+        border: none;
+        border-radius: 1rem 1rem 1rem 1rem;
+        height: 3rem;
+        width: 3rem;
+        margin-left: -1.5rem;
+    }
+
+    #barreFiltres {
+        margin-bottom: 1rem;
+    }
+
+    #barreFiltres ul {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: stretch;
+        margin: 0;
+        padding: 0;
+    }
+
+    #barreFiltres li {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 0;
+        padding-bottom: 1rem;
+    }
+
+    .pFiltre {
+        margin-right: .5rem;;
+        padding-right: 1rem;
+    }
+    
+    #informations {
+        display: flex;
+    }
+
+    #informations span {
+        margin-left: 2rem;
+    }
+
+    #blocResultats article,
+    #blocResultats aside,
+    #cartesActivites {
+        flex-direction: column;
+        align-content: center;
+        max-width: 100%;
+    }
+
+    #blocResultats {
+        display: flex;
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+        line-height: 1rem;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    #blocResultats aside {
+        border-radius: 0;
+        width: 100%;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: 0;
+        padding: 0;
+        padding-top: 2rem;
+        padding-bottom: .3rem;
+    }
+
+    #titrePopulaires {
+        padding: 1rem;
+        margin-bottom: .5rem;
+    }
+
+    .cartePopulaire {
+        margin-left: 1rem;
+        margin-right: 1rem;
+        margin-top: -1.2rem;
+        margin-bottom: 1.7rem;
+    }
+
+    #blocResultats article {
+        background-color: white;
+        margin-right: 0;
+        width: 100%;
+		padding-left: 1rem;
+		padding-right: 1rem;
+    }
+
+    #blocResultats h2{
+        margin-bottom: 1.5rem;
+    }
+
+    #hebergement {
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .carteHebergement {
+        width: 100%;
+    }
+    
+    #afficherPlus{
+        margin-top: 1.5rem;
+    }
+
+    #activites {
+        margin-top: 1.5rem;
+    }
+
+    #activites h2{
+        margin-left: 1rem;
+    }
+
+    #activites figure {
+        margin: 1rem;
+        margin-bottom: .5rem;
+    }
+
+    .imgGrandeCarteActivite {
+        height: 8.4rem;
+        width: 100%;
+        object-fit: cover;
+        max-width: 100%;
+    }
+
+    .imgPetiteCarteActivite {
+        height: 8.4rem;
+        width: 100%;
+        object-fit: cover;
+        max-width: 100%;
+    }
+
+    #monPiedDePage {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-top: 3rem;
+        width: 100%;
+        padding-bottom: 2rem;
+    }
+
+    footer ul {
+        margin: 0;
+        padding-left: 2rem;
+        padding-bottom: 1.5rem;
+    }
+}
