@@ -18,9 +18,69 @@
         padding-bottom: 1rem;
     }
 
+    body {
+        padding: 2rem;
+        padding-top:0;
+    }
+
+    #blocResultats {
+        display: flex;
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+        line-height: 1rem;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    #blocResultats aside {
+        border-radius: 0;
+        width: 100%;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        margin: 0;
+        padding: 1rem;
+        padding-right: 0;
+    }
+
+    #titrePopulaires{
+        padding-left: 0;
+        padding-right: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    #conteneurPopulaires {
+        display: flex;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .cartePopulaire {
+        margin: 0;
+        margin-right: 1rem;
+    }
+
+    .cartePopulaire figure {
+        width:100%;
+    }
+
+    #blocResultats article {
+        background-color: white;
+        margin-right: 0;
+        width: 100%;
+		padding-left: 0rem;
+		padding-right: 0rem;
+    }
+
+    #conteneurMenu{
+        margin-left : 2rem;
+    }
 }
 
-@media only screen and (max-width: 667px) {
+@media only screen and (max-width: 710px) {
+
+    body {padding: 0;}
+
     #logoEtMenu {
         flex-direction: column;
         padding-top: 1rem;
@@ -178,43 +238,27 @@
         max-width: 100%;
     }
 
-    #blocResultats {
-        display: flex;
-        flex-wrap: wrap-reverse;
-        justify-content: center;
-        line-height: 1rem;
-        padding-left: 0;
-        padding-right: 0;
-    }
-
-    #blocResultats aside {
-        border-radius: 0;
-        width: 100%;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        margin: 0;
-        padding: 0;
-        padding-top: 2rem;
-        padding-bottom: .3rem;
-    }
-
     #titrePopulaires {
         padding: 1rem;
         margin-bottom: .5rem;
     }
 
+    #conteneurPopulaires {
+        flex-direction: column;
+    }
+
     .cartePopulaire {
-        margin-left: 1rem;
+        margin-left: 0;
         margin-right: 1rem;
         margin-top: -1.2rem;
         margin-bottom: 1.7rem;
     }
 
+    .imgCartePopulaire{
+        width: 33%;
+    }
+
     #blocResultats article {
-        background-color: white;
-        margin-right: 0;
-        width: 100%;
 		padding-left: 1rem;
 		padding-right: 1rem;
     }
@@ -262,6 +306,10 @@
         width: 100%;
         object-fit: cover;
         max-width: 100%;
+    }
+
+    #conteneurMenu{
+        margin-left : 0;
     }
 
     #monPiedDePage {
