@@ -83,6 +83,7 @@
 
     #logoEtMenu {
         flex-direction: column;
+        margin-bottom: 1.5rem;
         padding-top: 1rem;
     }
 
@@ -90,6 +91,9 @@
         margin-left: 1rem;
     }
 
+    #menu {
+        margin-top: 1rem;
+    }
     #menu nav {
         width: 100%;
         margin: 0;
@@ -160,26 +164,15 @@
         margin-bottom: 1.5rem;
     }
 
-    #inputRecherche {
-        border-bottom: .1rem solid var(--gris);
-        border-left: none;
-        border-right: none;
-        border-top: .1rem solid var(--gris);
-        box-sizing: border-box;
-        font-size: 1rem;
-        font-weight: bold;
-        height: 3rem;
-        max-width: unset;
-        padding: 1rem;
-        outline: none;
-        vertical-align: top;
-        margin: 0;
+    #barreRecherche {
+        margin-top: 1.5rem;
     }
 
-    #barreRecherche {
-        margin-left: auto;
-        margin-right: auto;
-        box-sizing: content-box;
+    #inputRecherche {
+        box-sizing:border-box;
+        padding-right: unset;
+        margin:0;
+        width: 77%;
     }
 
     #envoyer1 {
@@ -221,14 +214,6 @@
         margin-right: .5rem;;
         padding-right: 1rem;
     }
-    
-    #informations {
-        display: flex;
-    }
-
-    #informations span {
-        margin-left: 2rem;
-    }
 
     #blocResultats article,
     #blocResultats aside,
@@ -240,6 +225,7 @@
 
     #titrePopulaires {
         padding: 1rem;
+        padding-left: 0;
         margin-bottom: .5rem;
     }
 
@@ -252,6 +238,10 @@
         margin-right: 1rem;
         margin-top: -1.2rem;
         margin-bottom: 1.7rem;
+    }
+
+    .cartePopulaire h3 {
+        line-height: 1.2rem;
     }
 
     .imgCartePopulaire{
