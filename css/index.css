@@ -194,6 +194,7 @@ header,
 
 #informations {
     line-height: 1.2rem;
+    flex-wrap: nowrap;
 }
 
 .cercle {
