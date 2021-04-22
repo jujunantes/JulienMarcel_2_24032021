@@ -30,9 +30,10 @@ html {
     font-family: 'Raleway', sans-serif;
 }
 
-body, header, #blocRecherche, #blocResultats, #blocResultats article, #activites, #cartesActivites, #logoEtMenu, #menu, header ul, #barreRecherche, #barreFiltres,
-#barreFiltres a, #barreFiltres ul, #barreFiltres li, #blocRecherche p, #hebergement, #monPiedDePage, aside, .carteHebergement figure, .cartePopulaire figure,
-#titrePopulaires, .activitesPetitesCartes {
+body, header, #blocRecherche, #blocRecherche p, #blocResultats, #blocResultats article, #activites, #cartesActivites, #logoEtMenu, #menu,
+header ul, #barreRecherche, #barreFiltres, #barreFiltres a, #barreFiltres ul, #barreFiltres li, #hebergement, #monPiedDePage, aside,
+.carteHebergement figure, .cartePopulaire figure, #titrePopulaires, #informations, .activite, .carteActivite, #conteneurMenu, #monPiedDePage,
+.bloc3Activites {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -192,7 +193,6 @@ header,
 }
 
 #informations {
-    display: flex;
     line-height: 1.2rem;
 }
 
@@ -208,7 +208,6 @@ header,
 
 #blocResultats {
     margin-top: 2rem;
-    /*justify-content: space-between;*/
 }
 
 #blocResultats article{
@@ -347,7 +346,8 @@ header,
     bottom: 1rem;
 }
 
-#activites{
+/* --- Section des activités --- */
+#activites {
     margin-top: 4rem;
     flex-direction: column;
 }
@@ -359,72 +359,64 @@ header,
 
 #cartesActivites {
     flex-direction: row;
+    flex-wrap: nowrap;
     justify-content: space-between;
 }
 
-.activitesPetitesCartes {
+
+.bloc3Activites {
+    justify-content: space-between;
+    width: 49%;
+}
+
+.activite {
     flex-direction: column;
     justify-content: space-between;
+    width: 48%;
 }
-#activites figure {
+
+.carteActivite {
     border-radius: 1rem;
     box-shadow: 0 0 0 0 rgba(0, 0, 0, .0), 0 0 1rem 0 rgba(0, 0, 0, .19);
-    /*width: auto;*/
-    /*flex-direction: column;*/
 }
 
-#activites img {
+.photoActivite {
+    width: 100%;
     border-radius: 1rem 1rem 0 0;
+    object-fit: cover;
 }
 
-#activites h3{
+.carteActivite h3 {
     padding: 1rem;
 }
-
-#conteneurActivite{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 25%;
-}
 /*
-.imgGrandeCarteActivite {
-    max-width:100%;
-    object-fit: cover;
-}
-
-.imgPetiteCarteActivite {
-    max-width:100%;
-    object-fit: cover;
+#colonne1Activites,
+#colonne2Activites,
+#colonne3Activites {
+    margin-right : 2.5%;
 }
 */
-
-.imgGrandeCarteActivite {
+#colonne1Activites .photoActivite,
+#colonne3Activites .photoActivite {
     height: 23rem;
-    max-width: 19rem;
-    object-fit: cover;
 }
 
-.imgPetiteCarteActivite {
-    width: 19rem;
-    object-fit: cover;
-}
-
-.imgPomegues {
+#pomegues .photoActivite {
     height: 11.6rem;
 }
 
-.imgFrioul {
+#frioul .photoActivite {
     height: 6.8rem;
 }
 
-.imgGarde {
+#garde .photoActivite {
     height: 8.9rem;
 }
 
-.imgLongchamp {
+#longchamp .photoActivite {
     height: 10rem;
 }
+/* --- Fin section activités --- */
 
 footer {
     background-color: var(--gris);
@@ -433,7 +425,6 @@ footer {
 }
 
 #conteneurMenu{
-    display: flex;
     flex-direction: row;
 }
 
@@ -450,7 +441,6 @@ footer ul {
 }
 
 #monPiedDePage {
-    display: flex;
     justify-content: space-between;
     margin-top: 2rem;
     width: 75%;
