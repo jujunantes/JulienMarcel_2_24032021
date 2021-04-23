@@ -64,6 +64,7 @@
         margin: 0;
         margin-right: 1rem;
         margin-bottom: 1rem;
+        width: 33%;
     }
 
     .cartePopulaire figure {
@@ -349,6 +350,7 @@
     #blocResultats article {
 		padding-left: 1rem;
 		padding-right: 1rem;
+        width: 100%;
     }
 
     #blocResultats h2{
@@ -359,10 +361,11 @@
         flex-wrap: nowrap;
         flex-direction: column;
         justify-content: space-around;
+        width: 100%;
     }
 
     .carteHebergement {
-        width: 100%;
+        min-width: 100%;
     }
     
     #afficherPlus{
