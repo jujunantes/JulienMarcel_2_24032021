@@ -72,6 +72,14 @@ header ul, #barreRecherche, #barreFiltres, #barreFiltres a, #barreFiltres ul, #b
     border-top: 2px solid var(--bleuFonce);
 }
 
+#menu ul {
+    margin-right: 1rem;
+}
+#menu li {
+    margin-left: .5rem;
+    margin-right: .5rem;
+}
+
 #titre h1{
     font-size: 1.4rem;
     margin-bottom: .5rem;
@@ -141,7 +149,7 @@ header,
 }
 
 #barreFiltres {
-    font-size: 1rem;
+    font-size: 1.15rem;
     flex-wrap: wrap;
     font-weight: bold;
     margin-top: 2rem;
@@ -185,8 +193,8 @@ header,
     border-left: none;
     border-radius: 0 2rem 2rem 0;
     margin-left: -2.5rem;
-    margin-right: 1rem;
-    padding: 1rem;
+    margin-right: 1.4rem;
+    padding: .9rem;
     padding-left: 2rem;
     padding-right: 1.5rem;
     position: relative;
@@ -217,7 +225,7 @@ header,
     flex-direction: column;
     margin-right: 2rem;
     padding: 2rem;
-    width: 62%;
+    width: 60%;
 }
 
 #blocResultats h2{
@@ -280,7 +288,7 @@ header,
 #afficherPlus {
     font-weight: bold;
     font-size: 1.2rem;
-    margin-top: 2rem;
+    margin-top: 1.5rem;
     margin-left: 1.5%;
 }
 
@@ -291,13 +299,15 @@ header,
     margin: 0 0 0 .6rem;
     padding: .6rem;
     padding-top: 2rem;
-    width:28%;
+    padding-bottom: 0;
+    width:30%;
 }
 
 #titrePopulaires{
     justify-content: space-between;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-bottom: .5rem;
 }
 
 .iconePopulaire {
@@ -306,14 +316,16 @@ header,
 }
 
 #conteneurPopulaires{
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .cartePopulaire {
-    margin: .5rem 1.5rem 0 1.5rem;
-    margin-bottom: 7%;
     font-size: .9rem;
+    margin-bottom: 2rem;
 }
 
 .imgCartePopulaire{
@@ -332,14 +344,15 @@ header,
 }
 
 .cartePopulaire figcaption {
-    margin: 0 3rem 0 1rem;
+    margin: 0;
+    margin-left: 1rem;
     position: relative;
 }
 
 .cartePopulaire h3 {
     font-size: 1rem;
     line-height: 1.2rem;;
-    margin: 1rem 0 1rem 0;
+    margin: 1rem 2rem 1rem 0;
 }
 
 .cartePopulaire .notation{

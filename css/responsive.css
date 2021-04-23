@@ -39,8 +39,13 @@
         flex-wrap: nowrap;
         justify-content: space-between;
         margin: 0;
-        /*padding: 1rem;*/
         padding-right: 0;
+    }
+
+    #conteneurPopulaires{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
     }
 
     #titrePopulaires{
@@ -58,6 +63,7 @@
     .cartePopulaire {
         margin: 0;
         margin-right: 1rem;
+        margin-bottom: 1rem;
     }
 
     .cartePopulaire figure {
@@ -140,10 +146,8 @@
     }
 
     .cartePopulaire {
-        margin-left: 0;
-        margin-right: 1rem;
-        margin-top: -1.2rem;
-        margin-bottom: 4%;
+        width: 95%;
+        margin-bottom: 2rem;
     }
 
     .cartePopulaire h3 {
@@ -225,13 +229,13 @@
     }
 
     #titre {
-        padding: 1rem;
         padding-top: .5rem;
     }
 
     #titre h1 {
         font-size: 1.4rem;
         line-height: 1.7rem;
+        margin-bottom: 1rem;
     }
 
     #blocRecherche {
@@ -271,6 +275,7 @@
     }
 
     #barreFiltres {
+        font-size: 1rem;
         margin-bottom: 1rem;
     }
 
@@ -321,10 +326,10 @@
     }
 
     .cartePopulaire {
-        margin-left: 0;
-        margin-right: 0;
+        width: 100%;
+        margin-left: .7rem;
         margin-top: -1.2rem;
-        margin-bottom: 1.7rem;
+        margin-bottom: 1.9rem;
     }
 
     .cartePopulaire h3 {
@@ -333,6 +338,11 @@
 
     .imgCartePopulaire{
         width: 33%;
+        margin: 1.5%;
+    }
+
+    .imgCarteHebergement{
+        width: 97%;
         margin: 1.5%;
     }
 
@@ -385,6 +395,11 @@
     .activite {
         width: calc(100% - 1.3rem);
     }
+
+    .bloc3Activites {
+        margin-bottom: 0;
+    }
+
     .carteActivite {
         margin-bottom: 1.5rem;
     }
