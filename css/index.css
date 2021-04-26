@@ -53,13 +53,14 @@ header ul, #barreRecherche, #barreFiltres, #barreFiltres a, #barreFiltres ul, #b
 }
 
 #menu {
+    margin-top : .5rem;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
 #menu a {
     padding: 1.5rem;
-    padding-top: 2.75rem;
+    padding-top: 3.3rem;
     border-top: blue;
 }
 
@@ -98,9 +99,9 @@ header,
 .imgRecherche {
     background: var(--gris);
     border-radius: 1rem 0 0 1rem;
-    padding: 1rem;
-    height: 1rem;
-    width: 1rem;
+    padding: .9rem;
+    height: 1.2rem;
+    width: 1.3rem;
 }
 
 #inputRecherche {
@@ -108,12 +109,12 @@ header,
     border-left: none;
     border-right: none;
     border-top: .1rem solid var(--gris);
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: bold;
     height: 3rem;
     margin-right: -2.5rem;
     padding: 1rem;
-    padding-right: 0;
+    padding-right: 2.5rem;
     outline: none;
 }
 
@@ -126,6 +127,8 @@ header,
     font-size: 1.2rem;
     outline: none;
     padding: .8rem;
+    padding-left : 1.3rem;
+    padding-right: 1.3rem;
 }
 
 #envoyer1:active {
